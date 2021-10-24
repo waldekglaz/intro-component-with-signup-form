@@ -1,0 +1,149 @@
+// body
+.body {
+  font-family: $font-main;
+  background-image: url("../images/bg-intro-mobile.png");
+  background-position: center;
+  background-size: cover;
+  background-color: $clr-red;
+  color: $clr-white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.component {
+  padding: 1rem 2rem;
+}
+.text-content {
+  margin-bottom: 3rem;
+}
+.component-heading {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+}
+
+.info {
+  background-color: $clr-accent;
+  padding: 1rem 4rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 5px 3px $clr-darkBlueTransp;
+}
+.my-form {
+  background-color: $clr-white;
+  padding: 0 1rem 1rem;
+  color: $clr-darkBlue;
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 14px;
+  box-shadow: 0 5px 3px $clr-darkBlueTransp;
+
+  .my-input {
+    padding: 0.75rem;
+    margin-top: 1rem;
+    border: $clr-grayBlue 1px solid;
+    border-radius: 0.25rem;
+    color: $clr-darkBlue;
+    font-weight: $font-semiBold;
+    width: 100%;
+  }
+  ::placeholder {
+    color: $clr-darkBlue;
+    font-weight: $font-semiBold;
+    font-size: 14px;
+  }
+  .input-wrapper {
+    position: relative;
+  }
+  .error-img {
+    position: absolute;
+    right: 10%;
+    bottom: 35%;
+    opacity: 0;
+  }
+  .alert-msg {
+    text-align: right;
+    font-size: 10px;
+    color: $clr-red;
+    font-weight: $font-semiBold;
+    opacity: 0;
+  }
+  .btn {
+    padding: 1rem;
+    text-transform: uppercase;
+    color: $clr-white;
+    font-weight: $font-semiBold;
+    outline: none;
+    background-color: $clr-green;
+    border: 1px solid $clr-green;
+    border-radius: 0.25rem;
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+    cursor: pointer;
+    box-shadow: 0 5px 3px $clr-darkBlueTransp;
+    transition: ease 0.2s;
+    &:hover {
+      background-color: $clr-red;
+      border-color: $clr-red;
+    }
+  }
+  .terms {
+    font-size: 11px;
+    padding: 0 1.25rem;
+    line-height: 1.5;
+    .red {
+      color: $clr-red;
+      font-size: inherit;
+      font-weight: $font-bold;
+    }
+  }
+}
+.attribution {
+  padding: 0 2rem;
+  font-size: 10px;
+  a {
+    font-size: inherit;
+    color: $clr-darkBlue;
+    text-decoration: none;
+    font-weight: $font-semiBold;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+// Media querries
+
+@media (min-width: 1024px) {
+  .body {
+    background-image: url("../images/bg-intro-desktop.png");
+  }
+  .component {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+  }
+  .text-content {
+    flex-basis: 50%;
+    padding-right: 2rem;
+    text-align: left;
+    .component-heading {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .info {
+    padding: 1rem;
+  }
+  .my-form {
+    .btn {
+      padding: 0.75rem 0.5rem;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+// Variables
+//Colors
+$clr-white: #fff;
+$clr-red: rgba(255, 122, 122, 0.9);
+$clr-green: hsl(154, 59%, 51%);
+$clr-accent: hsl(248, 32%, 49%);
+$clr-darkBlue: hsl(249, 10%, 26%);
+$clr-darkBlueTransp: rgba(62, 60, 73, 0.3);
+$clr-grayBlue: hsl(246, 25%, 77%);
+// Typo
+$font-size: 16px;
+$font-regular: 400;
+$font-medium: 500;
+$font-semiBold: 600;
+$font-bold: 700;
+$font-main: "Poppins", sans-serif;
+
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: $font-size;
+}
+input {
+  border: none;
+}

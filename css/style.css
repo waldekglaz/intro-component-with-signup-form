@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+}
+
+input {
+  border: none;
+}
+
+.body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("../images/bg-intro-mobile.png");
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(255, 122, 122, 0.9);
+  color: #fff;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.component {
+  padding: 1rem 2rem;
+}
+
+.text-content {
+  margin-bottom: 3rem;
+}
+
+.component-heading {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+}
+
+.info {
+  background-color: #6055a5;
+  padding: 1rem 4rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+  -webkit-box-shadow: 0 5px 3px rgba(62, 60, 73, 0.3);
+          box-shadow: 0 5px 3px rgba(62, 60, 73, 0.3);
+}
+
+.my-form {
+  background-color: #fff;
+  padding: 0 1rem 1rem;
+  color: #3e3c49;
+  border-radius: 0.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 14px;
+  -webkit-box-shadow: 0 5px 3px rgba(62, 60, 73, 0.3);
+          box-shadow: 0 5px 3px rgba(62, 60, 73, 0.3);
+}
+
+.my-form .my-input {
+  padding: 0.75rem;
+  margin-top: 1rem;
+  border: #b9b6d3 1px solid;
+  border-radius: 0.25rem;
+  color: #3e3c49;
+  font-weight: 600;
+  width: 100%;
+}
+
+.my-form ::-webkit-input-placeholder {
+  color: #3e3c49;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.my-form :-ms-input-placeholder {
+  color: #3e3c49;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.my-form ::-ms-input-placeholder {
+  color: #3e3c49;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.my-form ::placeholder {
+  color: #3e3c49;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.my-form .input-wrapper {
+  position: relative;
+}
+
+.my-form .error-img {
+  position: absolute;
+  right: 10%;
+  bottom: 35%;
+  opacity: 0;
+}
+
+.my-form .alert-msg {
+  text-align: right;
+  font-size: 10px;
+  color: rgba(255, 122, 122, 0.9);
+  font-weight: 600;
+  opacity: 0;
+}
+
+.my-form .btn {
+  padding: 1rem;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  outline: none;
+  background-color: #38cc8c;
+  border: 1px solid #38cc8c;
+  border-radius: 0.25rem;
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+  -webkit-box-shadow: 0 5px 3px rgba(62, 60, 73, 0.3);
+          box-shadow: 0 5px 3px rgba(62, 60, 73, 0.3);
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
+}
+
+.my-form .btn:hover {
+  background-color: rgba(255, 122, 122, 0.9);
+  border-color: rgba(255, 122, 122, 0.9);
+}
+
+.my-form .terms {
+  font-size: 11px;
+  padding: 0 1.25rem;
+  line-height: 1.5;
+}
+
+.my-form .terms .red {
+  color: rgba(255, 122, 122, 0.9);
+  font-size: inherit;
+  font-weight: 700;
+}
+
+.attribution {
+  padding: 0 2rem;
+  font-size: 10px;
+}
+
+.attribution a {
+  font-size: inherit;
+  color: #3e3c49;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.attribution a:hover {
+  color: #fff;
+}
+
+@media (min-width: 1024px) {
+  .body {
+    background-image: url("../images/bg-intro-desktop.png");
+  }
+  .component {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 1200px;
+  }
+  .text-content {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    padding-right: 2rem;
+    text-align: left;
+  }
+  .text-content .component-heading {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .info {
+    padding: 1rem;
+  }
+  .my-form .btn {
+    padding: 0.75rem 0.5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
